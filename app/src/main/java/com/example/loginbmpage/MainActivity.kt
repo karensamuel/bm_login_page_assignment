@@ -33,7 +33,7 @@ Column {
 
 
 
-@Preview(showBackground = true, showSystemUi = true, locale = "ar")
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun LoginPagePreview() {
     LoginBmPageTheme {

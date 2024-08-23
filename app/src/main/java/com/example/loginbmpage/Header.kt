@@ -18,7 +18,9 @@ import com.example.loginbmpage.ui.theme.Button_on_Red
 
 @Composable
 fun Header(modifier: Modifier = Modifier) {
-    Box() {
+    Box(modifier = Modifier
+        .fillMaxWidth()
+        .padding(16.dp)) {
         // Row for Image and Language Text
         Row(
             modifier = Modifier
@@ -34,7 +36,7 @@ fun Header(modifier: Modifier = Modifier) {
             )
             Text(
                 text = stringResource(R.string.language),
-                textAlign = TextAlign.End,
+                textAlign = TextAlign.End,modifier = Modifier.align(Alignment.CenterVertically),
                 color = Button_on_Red,
 
             )
